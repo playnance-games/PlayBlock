@@ -43,7 +43,7 @@ contract USD is ERC20 , ERC20Permit, ERC20Burnable, ERC20Pausable, Ownable {
     function _update(address from, address to, uint256 amount) internal override (ERC20,ERC20Pausable) {
         uint256 taxAmount = 0;
 
-        if (!_whitelist[from] && _taxRate > 0) {
+        if (!_whitelist[from] && !_whitelist[to] && _taxRate > 0) {
             taxAmount = (amount * _taxRate) / 10000;
             require(taxAmount > 0, "PlayBlock: Tax amount too low");
             super._update(from, _taxWallet, taxAmount); //Send the tax amount to tax wallet
