@@ -1,4 +1,4 @@
-# PlayBlock Game Token (USD)
+# PlayBlock Game Token (USDP)
 
 ### **PlayBlock Game Token Specification**
 
@@ -9,7 +9,7 @@ The PlayBlock Game Token is a stable digital currency pegged to the US Dollar, s
 #### Token Details:
 
 * **Token Name:** PlayBlock USD
-* **Token Symbol:** USD
+* **Token Symbol:** USDP
 * **Decimals:** 2, enabling transactions and balances to closely mirror conventional fiat currency handling.
 * **Blockchain:** PlayBlock (ChainID: 1829)
 
@@ -17,7 +17,7 @@ The PlayBlock Game Token is a stable digital currency pegged to the US Dollar, s
 
 **Stability:**
 
-* **Pegging:** USD is pegged to the US Dollar and backed by a diverse treasury of fiat and cryptocurrencies, providing a stable and reliable token value.
+* **Pegging:** USDP is pegged to the US Dollar and backed by a diverse treasury of fiat and cryptocurrencies, providing a stable and reliable token value.
 
 **Taxation:**
 
@@ -34,14 +34,14 @@ The PlayBlock Game Token is a stable digital currency pegged to the US Dollar, s
 
 **Minting and Burning:**
 
-* **Minting:** The contract allows the token owner to mint new USD tokens to designated addresses as needed for supply regulation in line with treasury assets and ecosystem demands. For technical implementation, refer to OpenZeppelin's [_mint function documentation](https://docs.openzeppelin.com/contracts/3.x/api/token/erc20#ERC20-_mint-address-uint256-).
+* **Minting:** The contract allows the token owner to mint new USDP tokens to designated addresses as needed for supply regulation in line with treasury assets and ecosystem demands. For technical implementation, refer to OpenZeppelin's [_mint function documentation](https://docs.openzeppelin.com/contracts/3.x/api/token/erc20#ERC20-_mint-address-uint256-).
 * **Burning:** The token owner is also equipped to reduce the circulating token supply through burning, aiding in value stability and treasury balance adjustments.
 
   \
   * The ability of the token owner to burn tokens is a critical feature aimed at maintaining the security and integrity of the PlayBlock chain. By selectively removing tokens from circulation, the token owner can address and neutralize threats or malicious activities that might compromise the network's operation. This includes but is not limited to, penalizing bad actors who attempt to spam the network with frivolous or malicious transactions.
 
     \
-  * Beyond security concerns, the burning mechanism plays a vital role in regulating the token's supply. In scenarios where the market dynamics or treasury reserves necessitate adjustments to the circulating supply of USD tokens, the token owner can utilize the burning functionality to make precise, controlled reductions. This capability is crucial for maintaining the peg of the USD token to the US Dollar, ensuring its stability as a trusted medium of exchange on the PlayBlock chain.
+  * Beyond security concerns, the burning mechanism plays a vital role in regulating the token's supply. In scenarios where the market dynamics or treasury reserves necessitate adjustments to the circulating supply of USDP tokens, the token owner can utilize the burning functionality to make precise, controlled reductions. This capability is crucial for maintaining the peg of the USDP token to the US Dollar, ensuring its stability as a trusted medium of exchange on the PlayBlock chain.
 
     For technical implementation, refer to OpenZeppelin's [ERC20Burnable documentation.](https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#ERC20Burnable)
 
@@ -56,7 +56,7 @@ The PlayBlock Game Token is a stable digital currency pegged to the US Dollar, s
 
 **Token Recovery:**
 
-* **Asset Retrieval:** A provision allows the token owner to recover non-USD assets mistakenly sent to the contract, ensuring protection against accidental token loss.
+* **Asset Retrieval:** A provision allows the token owner to recover non-USDP assets mistakenly sent to the contract, ensuring protection against accidental token loss.
 
 #### Governance and Operational Integrity:
 
