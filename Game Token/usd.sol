@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 
-contract USD is ERC20 , ERC20Permit, ERC20Burnable, ERC20Pausable, Ownable {
+contract USDP is ERC20 , ERC20Permit, ERC20Burnable, ERC20Pausable, Ownable {
 
     uint256 private _taxRate; // Tax rate in basis points (1 basis point = 0.01%)
     address private _taxWallet;
@@ -18,7 +18,7 @@ contract USD is ERC20 , ERC20Permit, ERC20Burnable, ERC20Pausable, Ownable {
     event TokenRecovered(address tokenAddress, uint256 tokenAmount);
 
     //Constructor
-    constructor(address initialOwner,address taxWallet) ERC20("PlayBlock", "USD") ERC20Permit("PlayBlock") Ownable(initialOwner){
+    constructor(address initialOwner,address taxWallet) ERC20("PlayBlock", "USDP") ERC20Permit("PlayBlock") Ownable(initialOwner){
          _taxRate = 0; // Initialize tax rate to 0
          _taxWallet = taxWallet;
     }
