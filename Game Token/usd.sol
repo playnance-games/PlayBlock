@@ -18,7 +18,7 @@ contract USDP is ERC20 , ERC20Permit, ERC20Burnable, ERC20Pausable, Ownable {
     event TokenRecovered(address tokenAddress, uint256 tokenAmount);
 
     //Constructor
-    constructor(address initialOwner,address taxWallet) ERC20("PlayBlock", "USDP") ERC20Permit("PlayBlock") Ownable(initialOwner){
+    constructor(address initialOwner,address taxWallet) ERC20("Playnance", "USDP") ERC20Permit("Playnance") Ownable(initialOwner){
          _taxRate = 0; // Initialize tax rate to 0
          _taxWallet = taxWallet;
     }
@@ -28,8 +28,8 @@ contract USDP is ERC20 , ERC20Permit, ERC20Burnable, ERC20Pausable, Ownable {
         _mint(to, amount);
     }
 
-    function burn(address account, uint256 amount) public onlyOwner {
-        _burn(account, amount);
+    function burn(uint256 amount) public override onlyOwner {
+        super._burn(owner(), amount);
     }
 
     function pause() public onlyOwner {
@@ -45,7 +45,7 @@ contract USDP is ERC20 , ERC20Permit, ERC20Burnable, ERC20Pausable, Ownable {
 
         if (!_whitelist[from] && !_whitelist[to] && _taxRate > 0) {
             taxAmount = (amount * _taxRate) / 10000;
-            require(taxAmount > 0, "PlayBlock: Tax amount too low");
+            require(taxAmount > 0, "Tax amount too low");
             super._update(from, _taxWallet, taxAmount); //Send the tax amount to tax wallet
         }
 
