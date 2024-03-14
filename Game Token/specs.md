@@ -1,17 +1,17 @@
-# PlayBlock Game Token (USDP)
+# Playnance Game Token (USDP)
 
-### **PlayBlock Game Token Specification**
+### Playnance **Game Token Specification**
 
 #### Overview
 
-The PlayBlock Game Token is a stable digital currency pegged to the US Dollar, specifically designed to facilitate seamless transactions within the PlayBlock chain ecosystem. Merging the foundational attributes of the native PBG gas token with tailored functionalities suitable for a stablecoin, the USD token introduces a taxation mechanism alongside a whitelist feature to optimize transactional flexibility and efficiency.
+The Playnance Game Token is a stable digital currency pegged to the US Dollar, specifically designed to facilitate seamless transactions within the Playnance chain ecosystem. Merging the foundational attributes of the native PBG gas token with tailored functionalities suitable for a stablecoin, the USD token introduces a taxation mechanism alongside a whitelist feature to optimize transactional flexibility and efficiency.
 
 #### Token Details:
 
-* **Token Name:** PlayBlock USD
+* **Token Name:** Playnance USD
 * **Token Symbol:** USDP
 * **Decimals:** 2, enabling transactions and balances to closely mirror conventional fiat currency handling.
-* **Blockchain:** PlayBlock (ChainID: 1829)
+* **Blockchain:** Playnance (ChainID: 1829)
 
 #### Key Features:
 
@@ -38,10 +38,10 @@ The PlayBlock Game Token is a stable digital currency pegged to the US Dollar, s
 * **Burning:** The token owner is also equipped to reduce the circulating token supply through burning, aiding in value stability and treasury balance adjustments.
 
   \
-  * The ability of the token owner to burn tokens is a critical feature aimed at maintaining the security and integrity of the PlayBlock chain. By selectively removing tokens from circulation, the token owner can address and neutralize threats or malicious activities that might compromise the network's operation. This includes but is not limited to, penalizing bad actors who attempt to spam the network with frivolous or malicious transactions.
+  * The ability of the token owner to burn tokens is a critical feature aimed at maintaining the security and integrity of the Playnance chain. By selectively removing tokens from circulation, the token owner can address and neutralize threats or malicious activities that might compromise the network's operation. This includes but is not limited to, penalizing bad actors who attempt to spam the network with frivolous or malicious transactions.
 
     \
-  * Beyond security concerns, the burning mechanism plays a vital role in regulating the token's supply. In scenarios where the market dynamics or treasury reserves necessitate adjustments to the circulating supply of USDP tokens, the token owner can utilize the burning functionality to make precise, controlled reductions. This capability is crucial for maintaining the peg of the USDP token to the US Dollar, ensuring its stability as a trusted medium of exchange on the PlayBlock chain.
+  * Beyond security concerns, the burning mechanism plays a vital role in regulating the token's supply. In scenarios where the market dynamics or treasury reserves necessitate adjustments to the circulating supply of USDP tokens, the token owner can utilize the burning functionality to make precise, controlled reductions. This capability is crucial for maintaining the peg of the USDP token to the US Dollar, ensuring its stability as a trusted medium of exchange on the Playnance chain.
 
     For technical implementation, refer to OpenZeppelin's [ERC20Burnable documentation.](https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#ERC20Burnable)
 
@@ -60,4 +60,4 @@ The PlayBlock Game Token is a stable digital currency pegged to the US Dollar, s
 
 #### Governance and Operational Integrity:
 
-The governance and operational integrity of the PlayBlock USD token are foundational to its design and implementation on the PlayBlock chain. Through strategic features such as burning for security, spam prevention, supply management, coupled with the careful administration of whitelists and taxation, the governance model ensures the ecosystem remains secure, stable, and aligned with user interests. This governance approach not only enhances the token's utility and appeal but also fosters a transparent, efficient, and inclusive blockchain environment.
+The governance and operational integrity of the Playnance USDP token are foundational to its design and implementation on the Playnance chain. Through strategic features such as burning for security, spam prevention, supply management, coupled with the careful administration of whitelists and taxation, the governance model ensures the ecosystem remains secure, stable, and aligned with user interests. This governance approach not only enhances the token's utility and appeal but also fosters a transparent, efficient, and inclusive blockchain environment.
