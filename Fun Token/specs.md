@@ -1,6 +1,3 @@
-Certainly! Here's the updated token specification in Markdown format for the USDB "Fun Token" used in your gaming ecosystem:
-
-```markdown
 # Playnance Fun Token (USDB)
 
 ## Playnance **Fun Token Specification**
@@ -56,6 +53,3 @@ The Playnance Fun Token is a gaming-specific currency designed to enhance the ga
 ### Governance and Operational Integrity:
 
 The governance of the Playnance USDB token is crucial to its function within the gaming environment. With strategic features such as minting for promotional use, burning to manage supply, and robust tax and whitelist administration, the governance framework ensures that the gaming ecosystem remains engaging, fair, and secure. This approach not only enhances the token's utility but also supports a transparent and regulated gaming experience on the Playnance chain.
-```
-
-This Markdown formatted text can be used directly in documentation or web pages to describe the USDB token comprehensively.
