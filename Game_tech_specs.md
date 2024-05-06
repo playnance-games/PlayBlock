@@ -15,7 +15,7 @@
 #### 15:30 Pool
 - **Timing:** 15:30
 
-- **Smart contract:** 0x1F054366BB78a628F1c00312aaeDBd8A41633bd6
+- **Smart contract:** 0xAA508Fb0661940fb4D9717cEc03652056f4D38B5
 
 - **Round notifications:** wss://ds.playblock.io/sub?id=update_upvsdown_round_prod_v7_1
 
@@ -23,7 +23,7 @@
 
 - **Timing:** 30:60
 
-- **Smart contract:** 0xd0a5539bC3d7f5802A175B85E4A26edcDEBacE92
+- **Smart contract:** 0x883f9fFEaec18097364aFF3BeDCa144b97d79b1d
 
 - **Round notifications:** wss://ds.playblock.io/sub?id=update_upvsdown_round_prod_v7_2
 
@@ -31,7 +31,7 @@
 
 - **Timing:** 15:05
 
-- **Smart contract:** 0x9A898C027616D033bD37Bfa95cFc5AE4EAC15bc9
+- **Smart contract:** 0xAD8d5E8a201b49b2c7035Ea0f01875951297c213
 
 - **Round notifications:** wss://ds.playblock.io/sub?id=update_upvsdown_round_prod_v7_3
 
@@ -39,13 +39,13 @@
 
 - **Timing:** 15:15
 
-- **Smart contract:** 0xBD11b85c7d2943FbFcD00e19C4ba3462403DED0D
+- **Smart contract:** 0x8e22c463277b0Baefd24cE83442933144A97c618
 
 - **Round notifications:** wss://ds.playblock.io/sub?id=update_upvsdown_round_prod_v7_4
 
 #### 30:120 Pool
 - **Timing:** 30:120
   
-- **Smart contract:** 0x77B40BD0B819871Df433E6Bea8793d10A802C4AB
+- **Smart contract:** 0x7f48977a9a05C05DE5D31F676740a8fef916f0A9
   
-- **Round notifications:** wss://ds.playblock.io/sub?id=update_upvsdown_round_prod_v7_5
+- **Round notifications:** wss://ds.playblock.io/sub?id=update_upvsdown_round_prod_v8_5
