@@ -1,10 +1,10 @@
-# Playnance Fun Token (USDB)
+# Playnance Meme Fun Token (USDB)
 
-## Playnance **Fun Token Specification**
+## Playnance **Meme Fun Token Specification**
 
 ### Overview
 
-The Playnance Fun Token is a gaming-specific currency designed to enhance the gaming experience within the Playnance chain ecosystem. It operates distinctly from the USDP stablecoin, although it shares similar operational frameworks like the taxation mechanism and whitelist feature, optimized for game-centric transactions.
+The Playnance Meme Fun Token is a gaming-specific currency designed to enhance the gaming experience within the Playnance chain ecosystem. It operates distinctly from the USDP stablecoin, although it shares similar operational frameworks like the taxation mechanism and whitelist feature, optimized for game-centric transactions.
 
 ### Token Details:
 
