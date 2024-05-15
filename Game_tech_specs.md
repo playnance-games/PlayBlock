@@ -20,7 +20,7 @@
 
 - **Smart contract:** 0xd0a5539bC3d7f5802A175B85E4A26edcDEBacE92
 
-- **Round notifications:** wss://integration-updates-streamer.blitzbinary.com/pub?id=update_upvsdown_round_int_gelato
+- **Round notifications:** wss://integration-updates-streamer.blitzbinary.com/sub?id=update_upvsdown_round_int_gelato
 
 #### 30:30 Pool
 
@@ -28,7 +28,7 @@
 
 - **Smart contract:** 0x202973C8f227bb819df3Fed4c17215124D366756
 
-- **Round notifications:** wss://integration-updates-streamer.blitzbinary.com/pub?id=update_upvsdown_round_int_gelato_2
+- **Round notifications:** wss://integration-updates-streamer.blitzbinary.com/sub?id=update_upvsdown_round_int_gelato_2
 
 #### 15:30 Fun Pool
 
