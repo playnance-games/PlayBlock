@@ -13,6 +13,8 @@
 - **Fun Game Token Decimals:** 2
 - **Gas token Name:** CGT
 - **Faucet for gas tokens:** https://raas.gelato.network/rollups/details/public/arb-blueberry
+- **Jackpot Address:** 0x44b4fB3e36D1972E5B58f4c0f97A632C194fb42D
+- **Fun Jackpot Address:** 0x6784847B90fb14561A69A7ab2F716Cb113233612
 
 ### Pools:
 #### 30:15 Pool
