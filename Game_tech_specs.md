@@ -36,7 +36,7 @@
 
 - **Smart contract:** 0x7e6309D1513527DA9BCCe05B7C7a1B5d60675271
 
-- **Round notifications:** wss://integration-updates-streamer.blitzbinary.com/sub?id=update_upvsdown_round_int_gelato
+- **Round notifications:** wss://integration-updates-streamer.blitzbinary.com/pub?id=update_upvsdown_round_int_demo_v8_1
 
 #### 30:60 Fun Pool
 
@@ -44,7 +44,7 @@
 
 - **Smart contract:** 0x289CCA4C020a93bc3F95c1bD31CFB9E9023686a9
 
-- **Round notifications:** wss://integration-updates-streamer.blitzbinary.com/sub?id=update_upvsdown_round_int_gelato_2
+- **Round notifications:** wss://integration-updates-streamer.blitzbinary.com/pub?id=update_upvsdown_round_int_demo_v8_2
 
 ## Mainnet
 - **Chain name:** Playblock
