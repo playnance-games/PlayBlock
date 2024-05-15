@@ -7,9 +7,10 @@
 - **Explorer:** https://arb-blueberry.gelatoscout.com
 - **Game Token Address:** 0x73C3cDd1418c3F17D54A81148387d93122802E72
 - **Game Token Name:** USDP
+- **Game Token Decimals:** 2
 - **Fun Game Token Address:** 0x38e86d1dD957619aa199BbAD0027DE3C410B2754
 - **Fun Game Token Name:** USDB
-- **Game Token Decimals:** 2
+- **Fun Game Token Decimals:** 2
 - **Gas token Name:** CGT
 - **Faucet for gas tokens:** https://raas.gelato.network/rollups/details/public/arb-blueberry
 
@@ -52,9 +53,10 @@
 - **Explorer:** https://explorer.playblock.io
 - **Game Token Address:** 0x73C3cDd1418c3F17D54A81148387d93122802E72
 - **Game Token Name:** USDP
+- **Game Token Decimals:** 2
 - **Fun Game Token Address:** 0x34fdc6f5B4e1fFD14fDf86F729c6b7973eA381C5
 - **Fun Game Token Name:** USDB
-- **Game Token Decimals:** 2
+- **Fun Game Token Decimals:** 2
 - **Gas token Name:** PBG
 - **Faucet for gas tokens:** https://www.playnance.com/gas-station.html
 
