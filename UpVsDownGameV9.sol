@@ -509,7 +509,6 @@ contract UpVsDownGameV9 is Ownable{
         makeTradeStruct calldata userTrade
     )
         public
-        payable
         onlyOpenPool(userTrade.poolId)
         onlyGameRunning
         onlyPoolExists(userTrade.poolId)
