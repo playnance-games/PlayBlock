@@ -167,18 +167,13 @@ contract UpVsDownGameV9 is Ownable{
     }
 
     function changeGameFeePercentage(uint8 newFeePercentage) public onlyOwner {
-        require(newFeePercentage <= 100, "Wrong fee percentage value");
+        require(feeJackpotPercentage + newFeePercentage <= 100, "Wrong fee percentage value");
 
         feePercentage = newFeePercentage;
     }
 
-    function changeGameFeeJackpotPercentage(
-        uint8 newFeeJackpotPercentage
-    ) public onlyOwner {
-        require(
-            newFeeJackpotPercentage <= 100,
-            "Wrong jackpot fee percentage value"
-        );
+    function changeGameFeeJackpotPercentage(uint8 newFeeJackpotPercentage) public onlyOwner {
+        require(feePercentage + newFeeJackpotPercentage <= 100, "Wrong jackpot fee percentage value");
 
         feeJackpotPercentage = newFeeJackpotPercentage;
     }
