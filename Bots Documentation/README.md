@@ -1,29 +1,70 @@
+### Summary
 
-This folder holds explanations about building your own bots for UpVsDown game.
+This documentation provides a comprehensive guide to creating an automated trading bot for placing trades in the UpVsDown game using the Playnance Game Token (USDP) or the Playnance Meme Token (USDB). The bot is designed to interact with a smart contract and automate trade placements based on a predefined strategy.
 
-How to run with Docker:
-1. docker build -t trading-bot .
-2. docker run -d trading-bot
+#### Contents:
 
-**List of RPC endpoints to use:**<br>
-Key 1 <br>
-https://lb.drpc.org/ogrpc?network=playnance&dkey=AmsA2632Wk99pZ1Ym7OZe_uAtto4OHAR76bPhkHL9tz4
+1. **Introduction**
 
-Key 2 <br>
-https://lb.drpc.org/ogrpc?network=playnance&dkey=AmsA2632Wk99pZ1Ym7OZe_uYHIc3OHAR76bQhkHL9tz4
+   - **Overview:**
+     In the UpVsDown game, the user can place trades by connecting their wallet, selecting the pool, choosing the investment amount, and clicking the UP or DOWN button during the place trade phase. The game consists of rounds, and each round has a time for placing trades and a time for expiry, depending on the selected pool.
 
-Key 3 <br>
-https://lb.drpc.org/ogrpc?network=playnance&dkey=AmsA2632Wk99pZ1Ym7OZe_u6dNM9OHAR76bRhkHL9tz4
+   - **Purpose of the Bot:**
+     If you are familiar with programming languages like Node.js, you can build a bot that will place trades automatically. The bot will use the private key of the wallet and place trades automatically according to your strategy. For placing trades, the bot will use a wallet address with USDP or USDB (depending on which pool it is running). You should fund the wallet with enough tokens. You can buy USDP with a credit card or bridge from other cryptocurrency.
 
-Key 4 <br>
-https://lb.drpc.org/ogrpc?network=playnance&dkey=AmsA2632Wk99pZ1Ym7OZe_vPHT9vOHAR76bShkHL9tz4
+2. **Running the Bot**
 
-Key 5 <br>
-https://lb.drpc.org/ogrpc?network=playnance&dkey=AmsA2632Wk99pZ1Ym7OZe_vfmr5yOHAR76bThkHL9tz4
+   - **Example `.env` file:**
+     ```plaintext
+     RPC_PROVIDER=https://lb.drpc.org/ogrpc?network=playnance&dkey=AmsA2632Wk99pZ1Ym7OZe_uAtto4OHAR76bPhkHL9tz4
+     PK=YOUR PRIVATE KEY
+     ROUND_NOTIFICATIONS=wss://ds-proxy.playblock.io/sub?id=update_upvsdown_round_prod_demo_v8_3
+     SMART_CONTRACT_ADDRESS=0xf2035f3adc5F2a1Bcb5dF9D0A87fC93786e953f7
+     TOKEN_ADDRESS=0x34fdc6f5B4e1fFD14fDf86F729c6b7973eA381C5
+     POOL_ID=15:05:demo:btc
+     AVATAR_URL=https://storage.googleapis.com/betcioproduction/bit_logo.jpg
+     COUNTRY_CODE=UK
+     WHITE_LABEL_ID=upXd0
+     ```
 
-  
-**List of countries**<br>
-https://www.iban.com/country-codes [Use ALPHA-2 code column]
+   - **Running the Bot with Docker:**
+     To run the bot using Docker, follow these steps:
 
-**Pools and tokens details**<br>
-https://github.com/playnance-games/PlayBlock/blob/main/Game_tech_specs.md#mainnet
+     1. **Build the Docker Image:**
+        ```bash
+        docker build -t trading-bot .
+        ```
+
+     2. **Run the Docker Container:**
+        ```bash
+        docker run --env-file .env trading-bot
+        ```
+
+     Ensure that you have the `.env` file in the same directory as your Dockerfile or provide the full path to the `.env` file.
+
+   - **Example Code:**
+     Under the `src` folder, there is a full example of a working bot that places trades with a random amount and random direction.
+
+3. **Configuration Parameters:**
+
+   Detailed explanation of the configuration parameters:
+
+   - **RPC_PROVIDER:** The RPC provider URL to interact with the PlayBlock chain.
+   - **PK:** The private key of the wallet to be used for placing trades.
+   - **ROUND_NOTIFICATIONS:** The WebSocket URL to listen for round phases. Trades can be placed only during the PlaceTradePhase.
+   - **SMART_CONTRACT_ADDRESS:** The address of the smart contract used for placing trades.
+   - **TOKEN_ADDRESS:** The address of the token contract (USDP or USDB).
+   - **POOL_ID:** The ID of the pool where trades will be placed.
+   - **AVATAR_URL:** URL of the avatar image to be used.
+   - **COUNTRY_CODE:** The country code (ALPHA 2) of the user.
+   - **WHITE_LABEL_ID:** The white label ID to be used (the default is upXd0).
+
+   All the settings can be found here: [PlayBlock Game Tech Specs](https://github.com/playnance-games/PlayBlock/blob/main/Game_tech_specs.md#mainnet)
+
+4. **Advanced Usage**
+   - With the provided example code, you can create different strategies, run multiple trades, and use USDP and USDB tokens on other pools.
+   - The bot can be run locally or deployed to cloud providers like AWS, GCP, Azure, etc.
+   - Best practice for storing the private key is using KMS and pulling the private key from there.
+
+### Additional Information
+- Every pool has a minimum and maximum investment setting. Ensure to adhere to these limits when configuring your bot.
