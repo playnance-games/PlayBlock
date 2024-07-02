@@ -11,7 +11,9 @@ This documentation provides a comprehensive guide to creating an automated tradi
 
    - **Purpose of the Bot:**
      If you are familiar with programming languages like Node.js, you can build a bot that will place trades automatically. The bot will use the private key of the wallet and place trades automatically according to your strategy. For placing trades, the bot will use a wallet address with USDP or USDB (depending on which pool it is running). You should fund the wallet with enough tokens. You can buy USDP with a credit card or bridge from other cryptocurrency.
-
+     
+   - **Example Code:**
+     Under the `src` folder, there is a full example of a working bot that places trades with a random amount and random direction.
 2. **Running the Bot**
 
    - **Example `.env` file:**
@@ -41,9 +43,6 @@ This documentation provides a comprehensive guide to creating an automated tradi
         ```
 
      Ensure that you have the `.env` file in the same directory as your Dockerfile or provide the full path to the `.env` file.
-
-   - **Example Code:**
-     Under the `src` folder, there is a full example of a working bot that places trades with a random amount and random direction.
 
 3. **Configuration Parameters:**
 
