@@ -53,10 +53,10 @@
 - **Chain ID:** 1829
 - **RPC JSON:** Ask Playnance
 - **Explorer:** https://explorer.playblock.io
-- **Game Token Address:** https://explorer.playblock.io/address/0x73C3cDd1418c3F17D54A81148387d93122802E72 | 0x73C3cDd1418c3F17D54A81148387d93122802E72
+- **Game Token Address:** 0x73C3cDd1418c3F17D54A81148387d93122802E72
 - **Game Token Name:** USDP
 - **Game Token Decimals:** 2
-- **Fun Game Token Address:** https://explorer.playblock.io/address/0x34fdc6f5B4e1fFD14fDf86F729c6b7973eA381C5 | 0x34fdc6f5B4e1fFD14fDf86F729c6b7973eA381C5
+- **Fun Game Token Address:** 0x34fdc6f5B4e1fFD14fDf86F729c6b7973eA381C5
 - **Fun Game Token Name:** USDB
 - **Fun Game Token Decimals:** 2
 - **Gas token Name:** PBG
