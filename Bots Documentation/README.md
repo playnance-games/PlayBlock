@@ -11,7 +11,7 @@ This documentation provides a comprehensive guide to creating an automated tradi
 
    - **Purpose of the Bot:**
      If you are familiar with programming languages like Node.js, you can build a bot that will place trades automatically. The bot will use the private key of the wallet and place trades automatically according to your strategy. For placing trades, the bot will use a wallet address with USDP or USDB (depending on which pool it is running). You should fund the wallet with enough tokens. You can buy USDP with a credit card or bridge from other cryptocurrency.
-     
+
    - **Example Code:**
      Under the `src` folder, there is a full example of a working bot that places trades with a random amount and random direction.
 2. **Running the Bot**
@@ -20,10 +20,10 @@ This documentation provides a comprehensive guide to creating an automated tradi
      ```plaintext
      RPC_PROVIDER=https://lb.drpc.org/ogrpc?network=playnance&dkey=AmsA2632Wk99pZ1Ym7OZe_uAtto4OHAR76bPhkHL9tz4
      PK=YOUR PRIVATE KEY
-     ROUND_NOTIFICATIONS=wss://ds-proxy.playblock.io/sub?id=update_upvsdown_round_prod_demo_v8_3
-     SMART_CONTRACT_ADDRESS=0xf2035f3adc5F2a1Bcb5dF9D0A87fC93786e953f7
-     TOKEN_ADDRESS=0x34fdc6f5B4e1fFD14fDf86F729c6b7973eA381C5
-     POOL_ID=15:05:demo:btc
+     ROUND_NOTIFICATIONS=wss://ds-proxy.playblock.io/sub?id=update_upvsdown_round_prod_v7_3
+     SMART_CONTRACT_ADDRESS=0xAD8d5E8a201b49b2c7035Ea0f01875951297c213
+     TOKEN_ADDRESS=0x73C3cDd1418c3F17D54A81148387d93122802E72
+     POOL_ID=15:05:btc
      AVATAR_URL=https://storage.googleapis.com/betcioproduction/bit_logo.jpg
      COUNTRY_CODE=UK
      WHITE_LABEL_ID=upXd0
