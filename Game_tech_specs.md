@@ -102,10 +102,10 @@
 
 - **Round notifications:** wss://ds.playblock.io/sub?id=update_upvsdown_round_prod_v7_4
 
-#### 30:120:BTC Pool
-- **Timing:** 30:120 [30 seconds for placing trades , 120 seconds for expiry]
+#### 15:07:BTC Pool
+- **Timing:** 15:07 [15 seconds for placing trades , 7 seconds for expiry]
 
-- **Pool ID:** 30:120:btc
+- **Pool ID:** 15:07:btc
   
 - **Smart contract:** 0x7f48977a9a05C05DE5D31F676740a8fef916f0A9
   
@@ -151,10 +151,10 @@
 
 - **Round notifications:** wss://ds.playblock.io/sub?id=update_upvsdown_round_prod_demo_v8_4
 
-#### 30:120:BTC Pool
-- **Timing:** 30:120 [30 seconds for placing trades , 120 seconds for expiry]
+#### 15:07:BTC Pool
+- **Timing:** 15:07 [15 seconds for placing trades , 7 seconds for expiry]
 
-- **Pool ID:** 30:120:demo:btc
+- **Pool ID:** 15:07:demo:btc
   
 - **Smart contract:** 0xB2290317326edB97d51aA978630D2DBB9e000841
   
