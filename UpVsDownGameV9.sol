@@ -389,7 +389,7 @@ contract UpVsDownGameV9 is Ownable{
                 winners.total /
                 100);
 
-            sendToken(winners.addresses[i], winnings + winners.bets[i]);
+            sendToken(winners.addresses[i], winnings);
             emit TradeWinningsSent(
                 poolId,
                 winners.addresses[i],
@@ -433,13 +433,14 @@ contract UpVsDownGameV9 is Ownable{
         BetGroup storage winners,
         BetGroup storage losers
     ) private view returns (Distribution memory) {
-        uint256 fee = (feePercentage * losers.total) / 100;
-        uint256 jackpotFee = (feeJackpotPercentage * losers.total) / 100;
+        uint256 totalWinnings = winners.total + losers.total;
+        uint256 fee = (feePercentage * totalWinnings) / 100;
+        uint256 jackpotFee = (feeJackpotPercentage * totalWinnings) / 100;
         uint256 totalFee = fee + jackpotFee;
         uint256 pending = winners.bets.length - winners.distributedCount;
-        uint256 totalFees = losers.total - totalFee;
-        uint256 totalMinusFee = losers.total - fee;
-        uint256 totalMinusJackpotFee = losers.total - jackpotFee;
+        uint256 totalFees = totalWinnings - totalFee;
+        uint256 totalMinusFee = totalWinnings - fee;
+        uint256 totalMinusJackpotFee = totalWinnings - jackpotFee;
 
         return
             Distribution({
