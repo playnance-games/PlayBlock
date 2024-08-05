@@ -394,7 +394,7 @@ contract UpVsDownGameV9 is Ownable{
                 poolId,
                 winners.addresses[i],
                 winners.bets[i],
-                winnings,
+                winnings - winners.bets[i],
                 winners.addresses[i],
                 winners.whiteLabelIds[i],
                 feePercentage,
@@ -422,8 +422,11 @@ contract UpVsDownGameV9 is Ownable{
                 ((dist.feeJackpot + dist.totalMinusJackpotFee) *
                     feeJackpotPercentage) / 100
             );
+            
             //Send leftovers to fee address
-            sendToken(feeAddress, getContractTokenBalance());
+            if (getContractTokenBalance() > 0) {
+                sendToken(feeAddress, getContractTokenBalance());
+            }
 
             clearPool(poolId);
         }
