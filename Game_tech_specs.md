@@ -107,7 +107,7 @@
 
 - **Pool ID:** 15:07:btc
   
-- **Smart contract:** 0x7f48977a9a05C05DE5D31F676740a8fef916f0A9
+- **Smart contract:** 0xAfE7B716479022faC516F418427Fb5FE5968EcB0
   
 - **Round notifications:** wss://ds.playblock.io/sub?id=update_upvsdown_round_prod_v8_5
 
