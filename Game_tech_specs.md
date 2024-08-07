@@ -68,7 +68,7 @@
 
 - **Pool ID:** 15:30:btc
 
-- **Smart contract:** 0xAA508Fb0661940fb4D9717cEc03652056f4D38B5
+- **Smart contract:** 0x41d35a75b7E16114E6A11B8b52c3Eea3A48D38cC
 
 - **Round notifications:** wss://ds.playblock.io/sub?id=update_upvsdown_round_prod_v7_1
 
@@ -78,7 +78,7 @@
 
 - **Pool ID:** 30:60:btc
 
-- **Smart contract:** 0x883f9fFEaec18097364aFF3BeDCa144b97d79b1d
+- **Smart contract:** 0xC59A450691e8af5B94C50Be143C99E8862B69dE2
 
 - **Round notifications:** wss://ds.playblock.io/sub?id=update_upvsdown_round_prod_v7_2
 
@@ -88,7 +88,7 @@
 
 - **Pool ID:** 15:05:btc
 
-- **Smart contract:** 0xAD8d5E8a201b49b2c7035Ea0f01875951297c213
+- **Smart contract:** 0x3A8C045BD27d0C059d8A3C0110267c4d2822e9bD
 
 - **Round notifications:** wss://ds.playblock.io/sub?id=update_upvsdown_round_prod_v7_3
 
@@ -98,7 +98,7 @@
 
 - **Pool ID:** 15:15:btc
 
-- **Smart contract:** 0x8e22c463277b0Baefd24cE83442933144A97c618
+- **Smart contract:** 0x02D3056B85578f1711481fD70Ae95e796B286697
 
 - **Round notifications:** wss://ds.playblock.io/sub?id=update_upvsdown_round_prod_v7_4
 
