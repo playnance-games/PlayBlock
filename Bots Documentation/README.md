@@ -26,7 +26,7 @@ This documentation provides a comprehensive guide to creating an automated tradi
      POOL_ID=15:05:btc
      AVATAR_URL=https://storage.googleapis.com/betcioproduction/bit_logo.jpg
      COUNTRY_CODE=UK
-     WHITE_LABEL_ID=upXd0
+     WHITE_LABEL_ID=b01oz
      ```
 
    - **Running the Bot with Docker:**
