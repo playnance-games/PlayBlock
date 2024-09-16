@@ -58,9 +58,25 @@ This documentation provides a comprehensive guide to creating an automated tradi
    - **COUNTRY_CODE:** The country code (ALPHA 2) of the user.
    - **WHITE_LABEL_ID:** The white label ID to be used (the default is upXd0).
 
-   All the settings can be found here: [PlayBlock Game Tech Specs](https://github.com/playnance-games/PlayBlock/blob/main/Game_tech_specs.md#mainnet)
+   All the settings of the blockchain can be found here: [PlayBlock Game Tech Specs](https://github.com/playnance-games/PlayBlock/blob/main/Game_tech_specs.md#mainnet)
 
-4. **Advanced Usage**
+   The configuration of the pools is dynamic. The config can be fetched from this public endpoint:
+   https://api.playblock.io/v1/config/pools
+
+   There are 2 groups of pools:
+   * Real pools. Users placing bets with USDP.
+   * Demo pools. Users placing bets with USDB.
+
+   For each pool you can get its poolId,contractAddress,downtime,duration,investments,roundStateChannel.
+   * poolId: The name of the pool
+   * contractAddress: The smart contract address on the PlayBlock chain
+   * downtime: How many seconds the user has to place bet.
+   * duration: How many seconds the user has to place bet.
+   * investments: The investments for the pool. Your bet amount should be higher than first investment amount in the array and lower than the last investment amount in the array.
+   * roundStateChannel: Websocket notification channel where you can get the current state of the round.
+   
+
+5. **Advanced Usage**
    - With the provided example code, you can create different strategies, run multiple trades, and use USDP and USDB tokens on other pools.
    - The bot can be run locally or deployed to cloud providers like AWS, GCP, Azure, etc.
    - Best practice for storing the private key is using KMS and pulling the private key from there.
