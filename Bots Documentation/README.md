@@ -56,7 +56,7 @@ This documentation provides a comprehensive guide to creating an automated tradi
    - **POOL_ID:** The ID of the pool where trades will be placed.
    - **AVATAR_URL:** URL of the avatar image to be used.
    - **COUNTRY_CODE:** The country code (ALPHA 2) of the user.
-   - **WHITE_LABEL_ID:** The white label ID to be used (the default is upXd0).
+   - **WHITE_LABEL_ID:** You should get the code by clicking the Generate Bot Key button in this page: https://moonxp.com/developers
 
    All the settings of the blockchain can be found here: [PlayBlock Game Tech Specs](https://github.com/playnance-games/PlayBlock/blob/main/Game_tech_specs.md#mainnet)
 
