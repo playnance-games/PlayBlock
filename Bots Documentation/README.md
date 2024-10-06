@@ -81,7 +81,7 @@ This documentation provides a comprehensive guide to creating an automated tradi
    - The bot can be run locally or deployed to cloud providers like AWS, GCP, Azure, etc.
    - Best practice for storing the private key is using KMS and pulling the private key from there.
    - If you need to use WebSocket listener on the Playblock you can use this endpoint:
-     [WSS endpoint](wss://lb.drpc.org/ogws?network=playnance&dkey=AmsA2632Wk99pZ1Ym7OZe_uAtto4OHAR76bPhkHL9tz4) (don't use other endpoints because they might be blocked in the future!)
+     wss://lb.drpc.org/ogws?network=playnance&dkey=AmsA2632Wk99pZ1Ym7OZe_uAtto4OHAR76bPhkHL9tz4 (don't use other endpoints because they might be blocked in the future!)
 
 ### Additional Information
 - Every pool has a minimum and maximum investment setting. Ensure to adhere to these limits when configuring your bot.
