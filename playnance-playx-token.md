@@ -21,35 +21,35 @@ Since PlayX is **not** a stablecoin, it does not maintain a 1:1 peg to the US Do
 
 ## Key Features
 
-### 1. Taxation (Adjustable)
-
-- **Initial Tax Rate**: 0% to encourage early adoption.
-- **Maximum Tax Rate**: 1% (i.e., `_taxRate <= 100` in basis points).
-- **Tax Wallet**: A wallet designated to receive any taxed amounts, settable by the owner.
-
-### 2. Whitelist Mechanism
-
-- **Tax Exemptions**: Certain addresses (e.g., partners, special users) can be whitelisted to avoid paying transaction taxes.
-- **Management Authority**: Only the token owner can add or remove addresses from the tax-exempt whitelist.
-
-### 3. Minting and Burning
+### 1. Minting and Burning
 
 - **Minting**: The owner can `mint` new tokens to designated addresses.
 - **Burning**: The owner can `burn` tokens from the owner’s balance, removing them from circulation.
 - **burnFrom** (from [OpenZeppelin’s `ERC20Burnable`](https://docs.openzeppelin.com/contracts)): Allows allowance-based token burning if a user wants to burn their own (or someone’s, with permission) tokens.
 
-### 4. Pause and Unpause
-
-- **Emergency Mechanism**: The owner can temporarily halt all transfers by calling `pause()`, and later `unpause()` when appropriate. This uses the [ERC20Pausable](https://docs.openzeppelin.com/contracts/api/token/erc20#ERC20Pausable) extension.
-
-### 5. Token Recovery
-
-- **Accidental Transfers**: A function allows the owner to recover non-PlayX tokens accidentally sent to the contract, reducing losses from user mistakes.
-
-### 6. Governance and Operational Integrity
+### 2. Governance and Operational Integrity
 
 - **Owner Role**: A single owner (or a multi-signature owner) controls minting, burning, tax rate changes, and whitelist management.
 - **Audited**: The Playnance suite, including PlayX, is among the top audited smart contracts by Certik (audit report referenced in the broader documentation).
+
+### 3. Pause and Unpause
+
+- **Emergency Mechanism**: The owner can temporarily halt all transfers by calling `pause()`, and later `unpause()` when appropriate. This uses the [ERC20Pausable](https://docs.openzeppelin.com/contracts/api/token/erc20#ERC20Pausable) extension.
+
+### 4. Token Recovery
+
+- **Accidental Transfers**: A function allows the owner to recover non-PlayX tokens accidentally sent to the contract, reducing losses from user mistakes.
+
+### 5. Whitelist Mechanism
+
+- **Tax Exemptions**: Certain addresses (e.g., partners, special users) can be whitelisted to avoid paying transaction taxes.
+- **Management Authority**: Only the token owner can add or remove addresses from the tax-exempt whitelist.
+
+### 6. Taxation (Adjustable. Currently set to 0%)
+
+- **Initial Tax Rate**: 0% to encourage early adoption.
+- **Maximum Tax Rate**: 1% (i.e., `_taxRate <= 100` in basis points).
+- **Tax Wallet**: A wallet designated to receive any taxed amounts, settable by the owner.
 
 ---
 
