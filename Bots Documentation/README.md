@@ -18,7 +18,7 @@ This documentation provides a comprehensive guide to creating an automated tradi
 
    - **Example `.env` file:**
      ```plaintext
-     RPC_PROVIDER=https://lb.drpc.org/ogrpc?network=playnance&dkey=AmsA2632Wk99pZ1Ym7OZe_uAtto4OHAR76bPhkHL9tz4
+     RPC_PROVIDER=https://rpc.playblock.io
      PK=YOUR PRIVATE KEY
      ROUND_NOTIFICATIONS=wss://ds-proxy.playblock.io/sub?id=update_upvsdown_round_prod_v7_3
      SMART_CONTRACT_ADDRESS=0xAD8d5E8a201b49b2c7035Ea0f01875951297c213
@@ -81,7 +81,7 @@ This documentation provides a comprehensive guide to creating an automated tradi
    - The bot can be run locally or deployed to cloud providers like AWS, GCP, Azure, etc.
    - Best practice for storing the private key is using KMS and pulling the private key from there.
    - If you need to use WebSocket listener on the Playblock you can use this endpoint:
-     wss://lb.drpc.org/ogws?network=playnance&dkey=AmsA2632Wk99pZ1Ym7OZe_uAtto4OHAR76bPhkHL9tz4 (don't use other endpoints because they might be blocked in the future!)
+     wss://ws.playblock.io (don't use other endpoints because they might be blocked in the future!)
 
 ### Additional Information
 - Every pool has a minimum and maximum investment setting. Ensure to adhere to these limits when configuring your bot.
